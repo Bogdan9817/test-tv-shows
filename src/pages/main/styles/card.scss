@@ -1,0 +1,38 @@
+.card {
+    background-color: #fff;
+    flex:0 0 30%;
+    display: block;
+    margin: 10px auto;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 4px 9px rgba(0,0,0,0.5);
+    transition: box-shadow .3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 4px 9px rgba(0,0,0,0.9);
+        transition: box-shadow .3s ease-in-out;
+    }
+    &:active {
+        opacity: .5;
+    }
+    .card-img {
+        >img {
+            width: 180px;
+            height: 250px;
+            border-radius: 4px;
+        }
+    }
+    .card-info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width:992px) {
+        flex:0 0 calc(20% - 20px);
+    }
+}
