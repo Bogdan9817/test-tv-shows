@@ -1,0 +1,20 @@
+.detailed-page {
+    padding: 1em;
+    min-height: 100vh;
+
+    .link {
+        display: flex;
+        color: #4A55B5;
+        text-decoration: none;
+        align-items: center;
+
+        &>span {
+            margin-right: 4px;
+        }
+        
+        &:hover {
+            color:#1D2DE2;
+        }
+    }
+    @import './detailed-info.scss';
+}

@@ -1,0 +1,15 @@
+.error-page {
+    padding: 2em;
+    text-align: center;
+
+    .navigate-link {
+        font-weight: 600;
+        font-size: 1.25em;
+        cursor: pointer;
+        margin: auto;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

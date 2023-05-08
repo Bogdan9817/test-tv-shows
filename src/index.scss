@@ -5,5 +5,39 @@
 
 body {
   margin: 0;
-  background-color: #eaeef5;
+  background-color: #EAEEF5;
+  color: #302C40;
+
+  .message {
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+    margin: 1em auto;
+  }
+
+  .loader {
+    font-weight: 600;
+    font-size: 2em;
+    animation-name: loader;
+    animation-duration: 1s;
+    animation-iteration-count: infinite
+    }
+}
+
+@keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    25%{
+        opacity: .5;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
 }

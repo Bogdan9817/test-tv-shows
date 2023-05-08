@@ -2,20 +2,20 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.scss";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Main from "./pages/main/Main";
+import MainPage from "./pages/main/MainPage";
 import NotFound from "./pages/not-found/NotFound";
-import Details from "./pages/details/Details";
+import DetailedPage from "./pages/details/DetailedPage";
 import ContextProvider from "./context/Context";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main />,
+    element: <MainPage />,
     errorElement: <NotFound />,
   },
   {
-    path: "/:showId",
-    element: <Details />,
+    path: "/:name",
+    element: <DetailedPage />,
     errorElement: <NotFound />,
   },
 ]);

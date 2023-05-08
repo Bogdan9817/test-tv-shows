@@ -4,7 +4,6 @@ const loadShows = async (
   query: string,
   errorHandler: (error: string) => void
 ) => {
-  errorHandler("");
   try {
     const res = await axios.get("https://api.tvmaze.com/search/shows", {
       params: {
