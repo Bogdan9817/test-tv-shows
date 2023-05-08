@@ -5,7 +5,7 @@ const NO_IMG = "https://joadre.com/wp-content/uploads/2019/02/no-image.jpg";
 export default function Card({ name, rating, img, id }: any) {
   const navigate = useNavigate();
   const handleNavigate = () => {
-    navigate(`/${name}?id=${id}`);
+    navigate(`${name}?id=${id}`);
   };
   return (
     <div className='card' onClick={handleNavigate}>

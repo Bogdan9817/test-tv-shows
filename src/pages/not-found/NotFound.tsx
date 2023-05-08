@@ -8,7 +8,7 @@ export default function NotFound() {
       <div className='message'>Looks like such page doesn't exist</div>
       <span
         onClick={() => {
-          navigate("/");
+          navigate("/test-tv-shows");
         }}
         className='navigate-link'
       >

@@ -13,7 +13,7 @@ export default function DetailedPage() {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate("/");
+    navigate("/test-tv-shows");
     dispatch({ type: "CLEAR_VIEW" });
   };
 
